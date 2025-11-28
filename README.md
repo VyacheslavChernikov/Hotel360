@@ -35,28 +35,28 @@
    cd Hotel360
 
 2. **Создайте виртуальное окружение**:
-
-python3 -m venv venv_new
-source venv_new/bin/activate  # Linux / macOS
+   ```bash
+   python3 -m venv venv_new
+   source venv_new/bin/activate  # Linux / macOS
 
 3. **Установите зависимости**:
-
-pip install "Django==3.2.19" "Pillow==9.5.0"
+   ```bash
+   pip install "Django==3.2.19" "Pillow==9.5.0"
 
 4. **Примените миграции**:
-
-python manage.py migrate
-
+   ```bash
+   python manage.py migrate
+ 
 5. **Создайте суперпользователя**:
-
-python manage.py createsuperuser
+   ```bash
+   python manage.py createsuperuser
 
 6. **Запустите сервер**:
-
-python manage.py runserver
+   ```bash
+   python manage.py runserver
 
 7. **Откройте в браузере**:
-
+   
 Админка: http://127.0.0.1:8000/admin
 (основной сайт — в разработке)
 
