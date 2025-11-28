@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
-    'room',
     'guest',
-    # 'reservation',  # удалено, так как папки нет
+    'room',
+    'main',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +134,7 @@ import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+# Брендирование админки
+ADMIN_SITE_HEADER = 'Hotel 360 Administration'
+ADMIN_SITE_TITLE = 'Hotel 360 Administration'
+ADMIN_INDEX_TITLE = 'Welcome to Hotel 360 Administration'
