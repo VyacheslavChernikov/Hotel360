@@ -1,35 +1,17 @@
 # Virtual environment
 venv/
+venv_new/
 
-# Byte-compiled files
-*.pyc
-*.pyo
-__pycache__/
-
-# Media files
-media/
-
-# Database files
+# Database
 db.sqlite3
 
-# Log files
-*.log
+# Python cache
+__pycache__/
+*.pyc
 
-# Ignore the local settings file
-local_settings.py
-
-# Ignore the Django migration history
-**/migrations/
-
-# Ignore the IDE configuration files
+# IDE
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
-*.pyc
-*.pyo
-*.pyd
 
-# Ignore pipenv virtual environment
-Pipfile
-Pipfile.lock
+# Logs
+*.log
