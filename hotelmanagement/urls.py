@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 
 # Применяем брендирование
@@ -24,4 +24,8 @@ admin.site.index_title = settings.ADMIN_INDEX_TITLE
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Подключаем все URL из приложения "main"
+    path('', include('main.urls')),
 ]
+
